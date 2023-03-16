@@ -157,14 +157,11 @@
           if (Math.abs(catRow - lastRow) <= 1 && Math.abs(catCol - lastCol) <= 1) {
             return "meow";
           }
-        
           const mouseRow = Math.floor(mouseLocation / 6);
           const mouseCol = mouseLocation % 6;
-        
           if (Math.abs(mouseRow - lastRow) <= 1 && Math.abs(mouseCol - lastCol) <= 1) {
             return "squeak";
           }
-        
           return "sorry, no help available";
         const helpButton = document.getElementById("help-button");
         helpButton.onclick = help;
